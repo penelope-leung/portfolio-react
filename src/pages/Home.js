@@ -1,21 +1,44 @@
-import React from 'react';
+import React from "react";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import "../styles/Home.css"
 
-export default function Home() {
+
+function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className="home">
+      <div className="about">
+        <h2> Hi, My Name is Penelope</h2>
+        <div className="prompt">
+          <p> A Software Developer with a passion for learning and creating.</p>
+          <LinkedInIcon />
+          <EmailIcon />
+          <GitHubIcon />
+        </div>
+      </div>
+      <div className="skills">
+        <h1>Skills</h1>
+        <ol className="list">
+          <li className="item">
+            <h2> Front-End</h2>
+            <span>
+              HTML, CSS, React, NPM, Bootstrap, Figma, JQuery
+            </span>
+          </li>
+          <li className="item">
+            <h2> Back-End</h2>
+            <span> NodeJS, ExpressJS, MySQL, MongoDB, MVC</span>
+          </li>
+          <li className="item">
+            <h2> Languages </h2>
+            <span> JavaScript, Python, C++, TypeScript</span>
+          </li>
+
+        </ol>
+      </div>
     </div>
   );
 }
+
+export default Home;
