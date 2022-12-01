@@ -2,7 +2,7 @@
   "name": "portfolio-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://penelope-leung.github.io/portfolio-react/",
+  "homepage": "https://penelope-leung.github.io/portfolio-react",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
@@ -16,7 +16,6 @@
     "axios": "^1.2.0",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
-    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^17.0.2",
@@ -26,7 +25,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -49,5 +48,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
