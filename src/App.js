@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
+import ContactMe from './pages/ContactMe';
 import Resume from './pages/Resume';
 // import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -23,7 +24,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/AboutMe" element={<AboutMe />} />
           <Route path="/Portfolio" element={<Portfolio />} />
-          <Route path="/Contact" element={<Contact />} />
+          {/* <Route path="/Contact" element={<Contact />} /> */}
+          <Route path="/ContactMe" element={<ContactMe />} />
           <Route path="/Resume" element={<Resume />} />
         </Routes>
         <Footer />
